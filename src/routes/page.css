@@ -15,38 +15,33 @@
 
 .carousel-viewport {
   --carousel-gap: 20px;
+  --card-width: 300px;
+  --card-height: 200px;
 
   width: 100%;
+  height: calc(var(--card-height) + 20px);
   overflow: hidden;
   position: relative;
   background: var(--color-bg);
   padding: 10px 0;
 }
 
-.scroll-track {
+.teleport-strip {
+  position: absolute;
+  top: 10px;
+  left: 0;
   display: flex;
   width: max-content;
+  gap: var(--carousel-gap);
+  padding-right: var(--carousel-gap);
+  box-sizing: border-box;
   will-change: transform;
 }
 
-.top-track {
-  animation: marquee-left 60s linear infinite;
-}
-
-.bottom-track {
-  animation: marquee-right 60s linear infinite;
-}
-
-.scrolling-group {
-  display: flex;
-  flex-shrink: 0;
-  gap: var(--carousel-gap);
-  padding-right: var(--carousel-gap);
-}
-
 .image-card {
-  flex: 0 0 300px;
-  height: 200px;
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
+  height: var(--card-height);
   overflow: hidden;
   border-radius: 8px;
 }
@@ -65,18 +60,8 @@
     margin-bottom: 20px;
   }
 
-  .image-card {
-    flex-basis: 240px;
-    height: 160px;
+  .carousel-viewport {
+    --card-width: 240px;
+    --card-height: 160px;
   }
-}
-
-@keyframes marquee-left {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
-}
-
-@keyframes marquee-right {
-  0% { transform: translate3d(-50%, 0, 0); }
-  100% { transform: translate3d(0, 0, 0); }
 }
