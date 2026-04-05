@@ -89,8 +89,6 @@
   font-weight: bold;
   font-family: "Young Serif";
   text-align: center;
-  min-height: 1.2em;
-  transition: opacity 120ms linear;
 }
 
 #body {
@@ -99,27 +97,6 @@
   font-size: 35px;
   text-align: center;
   padding-bottom: 75px;
-  min-height: 4.2em;
-  transition: opacity 120ms linear;
-}
-
-#title.typing::after,
-#body.typing::after {
-  content: '|';
-  margin-left: 0.06em;
-  animation: caret-blink 1s step-end infinite;
-}
-
-@keyframes caret-blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-
-  50.01%,
-  100% {
-    opacity: 0;
-  }
 }
 
 #applyButton {
