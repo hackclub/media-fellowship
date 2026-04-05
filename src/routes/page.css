@@ -140,7 +140,8 @@
 }
 
 .typing-text {
-	font-family: var(--font-serif);
+	font-family: "Glyseric";
+  font-weight: 600;
 	font-size: clamp(1.25rem, 3vw, 2.25rem);
 	max-width: 60ch;
 	text-align: center;
@@ -161,24 +162,23 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: clamp(1.5rem, 4vh, 3rem);
+	gap: clamp(1rem, 3vh, 2rem);
 	padding: 15vh clamp(1.5rem, 8vw, 12rem);
 	background: var(--color-bg);
 }
 
 .fellowship-title {
 	font-family: var(--font-serif);
-	font-size: clamp(1.5rem, 4vw, 3rem);
+	font-size: clamp(1rem, 3vw, 3rem);
 	color: var(--color-accent);
 	text-align: center;
-	max-width: 20ch;
 }
 
 .fellowship-body {
-	font-family: var(--font-serif);
+	font-family: "Glyseric";
 	font-size: clamp(1rem, 2.5vw, 1.75rem);
 	max-width: 60ch;
 	text-align: center;
-	color: var(--color-text-muted);
+	color: var(--color-text-dim);
 	line-height: 1.6;
 }
