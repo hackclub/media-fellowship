@@ -10,6 +10,8 @@
 	let bottomStripA: HTMLDivElement | undefined;
 	let bottomStripB: HTMLDivElement | undefined;
 
+	let secondPage: HTMLElement | undefined;
+
 	const TOP_SPEED = 75;
 	const BOTTOM_SPEED = 75;
 
@@ -91,6 +93,7 @@
 		};
 	}
 
+	// Carousel animation
 	onMount(() => {
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
@@ -103,6 +106,36 @@
 			stopTop();
 			stopBottom();
 		};
+	});
+
+	// Fade-in animation (independent of carousel)
+	onMount(() => {
+		const fadeElements = secondPage?.querySelectorAll('.fade-in');
+		if (!fadeElements?.length) return;
+
+		// Set stagger delays via CSS custom property
+		fadeElements.forEach((el, i) => {
+			(el as HTMLElement).style.setProperty('--fade-delay', `${i * 0.15}s`);
+		});
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			{
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			}
+		);
+
+		fadeElements.forEach((el) => observer.observe(el));
+
+		return () => observer.disconnect();
 	});
 </script>
 
@@ -157,3 +190,16 @@
 		</div>
 	</div>
 </div>
+
+<section class="second-page" bind:this={secondPage}>
+	<div class="fade-content">
+		<p class="fade-in">We're looking for teenagers who are passionate about storytelling.</p>
+		<p class="fade-in">People who see the world differently.</p>
+		<p class="fade-in">Who capture moments that matter.</p>
+		<p class="fade-in">Who can turn a camera into a window.</p>
+		<p class="fade-in">And a story into a movement.</p>
+		<p class="fade-in highlight">
+			This is your chance to tell the story of a generation of hackers.
+		</p>
+	</div>
+</section>
