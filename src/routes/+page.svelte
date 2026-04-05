@@ -145,8 +145,8 @@
 		{ type: 'word', text: "We're" },
 		{ type: 'word', text: 'looking' },
 		{ type: 'word', text: 'for' },
-		{ type: 'word', text: 'storytellers', bold: true, accent: true},
-		{ type: 'word', text: '— people'},
+		{ type: 'word', text: 'storytellers', bold: true, accent: true },
+		{ type: 'word', text: '— people' },
 		{ type: 'word', text: 'who' },
 		{ type: 'word', text: 'can' },
 		{ type: 'word', text: 'use' },
@@ -158,13 +158,13 @@
 		{ type: 'word', text: 'into' },
 		{ type: 'word', text: 'our' },
 		{ type: 'word', text: 'world —' },
-		{ type: 'word', text: 'and'},
+		{ type: 'word', text: 'and' },
 		{ type: 'word', text: "we're" },
 		{ type: 'word', text: 'looking' },
 		{ type: 'word', text: 'for' },
 		{ type: 'word', text: 'you' },
 		{ type: 'word', text: 'to' },
-		{ type: 'underline', text: 'tell our stories.' },
+		{ type: 'underline', text: 'tell our stories.' }
 	];
 
 	let heroScrollContainer: HTMLDivElement | undefined;
@@ -204,7 +204,7 @@
 			});
 
 			// Top carousel slides up, bottom carousel fades out: progress 0.85→1.0
-			const carouselProgress = Math.max(0, Math.min(1, (progress - 0.92) / 0.08));
+			const carouselProgress = Math.max(0, Math.min(1, (progress - 0.93) / 0.07));
 			if (carouselTop) {
 				carouselTop.style.transform = `translateY(${-carouselProgress * 110}%)`;
 				carouselTop.style.opacity = String(1 - carouselProgress);
@@ -277,13 +277,11 @@
 						<br class="typing-word" />
 					{:else if token.type === 'underline'}
 						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
+					{:else if token.accent}
+						<span class="typing-word accent">{token.text}</span>{WORD_SEPARATOR}
 					{:else}
-						{#if token.accent}
-							<span class="typing-word accent">{token.text}</span>{WORD_SEPARATOR}
-						{:else}
-							<span class="typing-word">{token.text}</span>{WORD_SEPARATOR}
-						{/if}
-						{/if}
+						<span class="typing-word">{token.text}</span>{WORD_SEPARATOR}
+					{/if}
 				{/each}
 			</p>
 		</div>
