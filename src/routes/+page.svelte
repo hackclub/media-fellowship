@@ -93,6 +93,7 @@
 		};
 	}
 
+	// Carousel animation
 	onMount(() => {
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
@@ -101,13 +102,28 @@
 		const stopTop = startTeleportLoop(topStripA, topStripB, -1, TOP_SPEED);
 		const stopBottom = startTeleportLoop(bottomStripA, bottomStripB, 1, BOTTOM_SPEED);
 
-		// Intersection Observer for fade-in animations
+		return () => {
+			stopTop();
+			stopBottom();
+		};
+	});
+
+	// Fade-in animation (independent of carousel)
+	onMount(() => {
 		const fadeElements = secondPage?.querySelectorAll('.fade-in');
+		if (!fadeElements?.length) return;
+
+		// Set stagger delays via CSS custom property
+		fadeElements.forEach((el, i) => {
+			(el as HTMLElement).style.setProperty('--fade-delay', `${i * 0.15}s`);
+		});
+
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						entry.target.classList.add('visible');
+						observer.unobserve(entry.target);
 					}
 				});
 			},
@@ -117,13 +133,9 @@
 			}
 		);
 
-		fadeElements?.forEach((el) => observer.observe(el));
+		fadeElements.forEach((el) => observer.observe(el));
 
-		return () => {
-			stopTop();
-			stopBottom();
-			observer.disconnect();
-		};
+		return () => observer.disconnect();
 	});
 </script>
 
@@ -186,6 +198,8 @@
 		<p class="fade-in">Who capture moments that matter.</p>
 		<p class="fade-in">Who can turn a camera into a window.</p>
 		<p class="fade-in">And a story into a movement.</p>
-		<p class="fade-in highlight">This is your chance to tell the story of a generation of hackers.</p>
+		<p class="fade-in highlight">
+			This is your chance to tell the story of a generation of hackers.
+		</p>
 	</div>
 </section>
