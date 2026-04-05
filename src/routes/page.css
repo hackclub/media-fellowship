@@ -1,3 +1,21 @@
+#scroll-down {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	font-family: 'Glyseric';
+	font-size: clamp(0.95rem, 1.1vw, 1.25rem);
+	line-height: 1.2;
+	color: var(--color-text-muted);
+	margin: clamp(1.25rem, 3vh, 2.25rem) auto 0;
+	gap: 0.5em;
+	cursor: pointer;
+	text-align: center;
+}
+
+#scroll-down-arrow {
+	font-size: 1.2em;
+}
 *::-webkit-scrollbar {
 	width: 0 !important;
 	height: 0 !important;
@@ -152,6 +170,10 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -55%);
+	width: min(92vw, 72rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .typing-overlay {
@@ -238,14 +260,6 @@ body {
 	line-height: 1.6;
 }
 
-r#scroll-down{
-	text-align:center;
-	margin-top: 4vh;
-	font-family: 'Glyseric', "serif";
-	color: var(--color-overlay-medium);
-	cursor: pointer;
-}
-
 @keyframes scroll-down-arrow{
 	0% {transform: translateY(-2px)}
 	50% {transform: translateY(2px)}
@@ -257,6 +271,7 @@ r#scroll-down{
 	animation-name: scroll-down-arrow;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+}
 .typing-word.accent {
 	color: var(--color-accent);
 }
