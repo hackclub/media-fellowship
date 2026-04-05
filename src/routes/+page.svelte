@@ -91,8 +91,19 @@
 			window.removeEventListener('resize', resetPositions);
 		};
 	}
-
 	onMount(() => {
+		const scrollDown = document.getElementById("scroll-down") as HTMLParagraphElement;
+
+		scrollDown.addEventListener("click", ()=>{
+			const container = document.querySelector(".hero-scroll-container") as HTMLElement;
+			const scrollableHeight = container.scrollHeight - window.innerHeight;
+			console.log("test");
+			window.scrollTo({
+				top: scrollableHeight *0.85,
+				behavior: "smooth"
+			});
+		})
+
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
 		}
@@ -188,6 +199,7 @@
 						content for Hack Club's social media.
 					</p>
 				</div>
+				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 			</div>
 		</div>
 
@@ -208,7 +220,7 @@
 			</div>
 		</div>
 
-		<div class="typing-overlay">
+		<div class="typing-overlay" id="first-intro">
 			<p class="typing-text">
 				<!-- eslint-disable svelte/no-useless-mustaches -->
 				{#each TYPING_TEXT.split(' ') as word, i (i)}<span class="typing-word">{word}</span

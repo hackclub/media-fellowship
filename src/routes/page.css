@@ -116,7 +116,7 @@ body {
 
 #title {
 	font-size: clamp(24px, 6vh, 75px);
-	color: var(--color-text-muted);
+	color: var(--color-accent);
 	font-weight: bold;
 	font-family: 'Young Serif';
 	text-align: center;
@@ -206,4 +206,25 @@ body {
 	text-align: center;
 	color: var(--color-text-dim);
 	line-height: 1.6;
+}
+
+#scroll-down{
+	text-align:center;
+	margin-top: 4vh;
+	font-family: 'Glyseric', "serif";
+	color: var(--color-overlay-medium);
+	cursor: pointer;
+}
+
+@keyframes scroll-down-arrow{
+	0% {transform: translateY(-2px)}
+	50% {transform: translateY(2px)}
+	100% {transform: translateY(-2px)}
+}
+
+#scroll-down-arrow {
+	display: inline-block;
+	animation-name: scroll-down-arrow;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
 }
