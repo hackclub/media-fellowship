@@ -13,6 +13,7 @@
 
 	const TOP_SPEED = 75;
 	const BOTTOM_SPEED = 75;
+	const WORD_SEPARATOR = ' ';
 
 	function startTeleportLoop(
 		stripA: HTMLDivElement,
@@ -277,12 +278,12 @@
 					{#if token.type === 'break'}
 						<br class="typing-word" />
 					{:else if token.type === 'underline'}
-						<span class="typing-word typing-underline">{token.text}</span>{' '}
+						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
 					{:else}
 						{#if token.accent}
-							<span class="typing-word accent">{token.text}</span>{' '}
+							<span class="typing-word accent">{token.text}</span>{WORD_SEPARATOR}
 						{:else}
-							<span class="typing-word">{token.text}</span>{' '}
+							<span class="typing-word">{token.text}</span>{WORD_SEPARATOR}
 						{/if}
 						{/if}
 				{/each}
