@@ -122,3 +122,38 @@
 	left: 50%;
 	transform: translate(-50%, -55%);
 }
+
+.second-page {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(1.5rem, 4vh, 3rem);
+	padding: 10vh clamp(1.5rem, 8vw, 12rem);
+	background: var(--color-bg);
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(30px);
+	transition:
+		opacity 0.8s ease-out var(--fade-delay, 0s),
+		transform 0.8s ease-out var(--fade-delay, 0s);
+	font-family: var(--font-serif);
+	font-size: clamp(1.25rem, 3vw, 2.25rem);
+	max-width: 60ch;
+	text-align: center;
+	color: var(--color-text-muted);
+	line-height: 1.5;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.fade-in.accent {
+	color: var(--color-accent);
+	font-size: clamp(1.5rem, 4vw, 3rem);
+}

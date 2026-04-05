@@ -104,6 +104,29 @@
 			stopBottom();
 		};
 	});
+
+	onMount(() => {
+		const fadeEls = document.querySelectorAll<HTMLElement>('.fade-in');
+		fadeEls.forEach((el, i) => {
+			el.style.setProperty('--fade-delay', `${i * 0.15}s`);
+		});
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						(entry.target as HTMLElement).classList.add('visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			{ threshold: 0.2 }
+		);
+
+		fadeEls.forEach((el) => observer.observe(el));
+
+		return () => observer.disconnect();
+	});
 </script>
 
 <div class="carousel-page">
@@ -157,3 +180,20 @@
 		</div>
 	</div>
 </div>
+
+<section class="second-page">
+	<p class="fade-in">
+		We're looking for two teenagers with a passion for storytelling — photographers, filmmakers,
+		writers, editors, or anyone who knows how to make people feel something.
+	</p>
+	<p class="fade-in">
+		You'll spend a year embedded in Hack Club, traveling to hackathons, documenting the moments that
+		make this community unlike anything else.
+	</p>
+	<p class="fade-in">
+		Late nights shipping projects. First solders. The look on someone's face when their code finally
+		works.
+	</p>
+	<p class="fade-in">These are the stories the world doesn't know yet.</p>
+	<p class="fade-in accent">You'll be the one to tell them.</p>
+</section>
