@@ -1,20 +1,36 @@
 #scroll-down {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: max-content;
-	font-family: 'Glyseric';
-	font-size: clamp(0.95rem, 1.1vw, 1.25rem);
-	line-height: 1.2;
-	color: var(--color-text-muted);
-	margin: clamp(1.25rem, 3vh, 2.25rem) auto 0;
-	gap: 0.5em;
-	cursor: pointer;
-	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: min(92vw, 72rem);
+    max-width: 40ch; 
+    
+    font-family: 'Glyseric';
+    font-size: clamp(0.9rem, 2vh, 1.25rem); 
+    line-height: 1.2;
+    color: var(--color-text-muted);
+    
+    margin: clamp(1rem, 4vh, 2.5rem) auto 0;
+    gap: 0.5em;
+    cursor: pointer;
+    text-align: center;
 }
 
 #scroll-down-arrow {
-	font-size: 1.2em;
+    font-size: 1.2em;
+    display: inline-block;
+    will-change: transform;
+    animation: scroll-down-arrow 2s infinite;
+}
+
+@keyframes scroll-down-arrow {
+    0%, 100% {
+        transform: translateY(-0.1em);
+    }
+    50% {
+        transform: translateY(0.1em);
+    }
 }
 *::-webkit-scrollbar {
 	width: 0 !important;
