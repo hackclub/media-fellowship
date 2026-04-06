@@ -238,7 +238,7 @@ body {
 	line-height: 1.6;
 }
 
-r#scroll-down{
+#scroll-down{
 	text-align:center;
 	margin-top: 4vh;
 	font-family: 'Glyseric', "serif";
@@ -257,6 +257,8 @@ r#scroll-down{
 	animation-name: scroll-down-arrow;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+}
+
 .typing-word.accent {
 	color: var(--color-accent);
 }
