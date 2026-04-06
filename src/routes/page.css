@@ -291,4 +291,5 @@ body {
 	font-family: "Glyseric", "serif";
 	color: var(--color-overlay-medium);
 	padding: 2rem 30vw;
+	font-size: 1.5vw
 }
