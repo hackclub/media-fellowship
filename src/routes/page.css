@@ -1,36 +1,37 @@
 #scroll-down {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: min(92vw, 72rem);
-    max-width: 40ch; 
-    
-    font-family: 'Glyseric';
-    font-size: clamp(0.9rem, 2vh, 1.25rem); 
-    line-height: 1.2;
-    color: var(--color-text-muted);
-    
-    margin: clamp(1rem, 4vh, 2.5rem) auto 0;
-    gap: 0.5em;
-    cursor: pointer;
-    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: min(92vw, 72rem);
+	max-width: 40ch;
+
+	font-family: 'Glyseric';
+	font-size: clamp(0.9rem, 2vh, 1.25rem);
+	line-height: 1.2;
+	color: var(--color-text-muted);
+
+	margin: clamp(1rem, 4vh, 2.5rem) auto 0;
+	gap: 0.5em;
+	cursor: pointer;
+	text-align: center;
 }
 
 #scroll-down-arrow {
-    font-size: 1.2em;
-    display: inline-block;
-    will-change: transform;
-    animation: scroll-down-arrow 2s infinite;
+	font-size: 1.2em;
+	display: inline-block;
+	will-change: transform;
+	animation: scroll-down-arrow 2s infinite;
 }
 
 @keyframes scroll-down-arrow {
-    0%, 100% {
-        transform: translateY(-0.1em);
-    }
-    50% {
-        transform: translateY(0.1em);
-    }
+	0%,
+	100% {
+		transform: translateY(-0.1em);
+	}
+	50% {
+		transform: translateY(0.1em);
+	}
 }
 *::-webkit-scrollbar {
 	width: 0 !important;
@@ -245,29 +246,29 @@ body {
 }
 
 .hwyd-section {
-    margin: auto;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
+	margin: auto;
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
 }
 
 .hwyd-panel {
-    display: flex;
-    align-items: center;
-    gap: 8rem;
-    margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 8rem;
+	margin: 0 auto;
 }
 
 .panel-img {
-    flex: 1;
-    max-width: 50%;
-    height: auto;    /* let the image determine its own height */
-    display: block;
+	flex: 1;
+	max-width: 50%;
+	height: auto; /* let the image determine its own height */
+	display: block;
 }
 
 .panel-text {
-  flex: 1;
+	flex: 1;
 }
 
 .left {
@@ -279,15 +280,15 @@ body {
 }
 
 .stitle {
-    font-size: clamp(1.5rem, 3vw, 2.75rem);
-    color: var(--color-text);
-    font-family: var(--font-serif);
+	font-size: clamp(1.5rem, 3vw, 2.75rem);
+	color: var(--color-text);
+	font-family: var(--font-serif);
 }
 
 .sbody {
-    font-family: 'Glyseric';
-    font-size: clamp(1.1rem, 1.35vw, 1.85rem);
-    color: var(--color-text-dim);
+	font-family: 'Glyseric';
+	font-size: clamp(1.1rem, 1.35vw, 1.85rem);
+	color: var(--color-text-dim);
 }
 
 .fellowship-body {
