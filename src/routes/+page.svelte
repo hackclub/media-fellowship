@@ -93,17 +93,17 @@
 		};
 	}
 	onMount(() => {
-		const scrollDown = document.getElementById("scroll-down") as HTMLParagraphElement;
+		const scrollDown = document.getElementById('scroll-down') as HTMLParagraphElement;
 
-		scrollDown.addEventListener("click", ()=>{
-			const container = document.querySelector(".hero-scroll-container") as HTMLElement;
+		scrollDown.addEventListener('click', () => {
+			const container = document.querySelector('.hero-scroll-container') as HTMLElement;
 			const scrollableHeight = container.scrollHeight - window.innerHeight;
-			console.log("test");
+			console.log('test');
 			window.scrollTo({
-				top: scrollableHeight *0.85,
-				behavior: "smooth"
+				top: scrollableHeight * 0.85,
+				behavior: 'smooth'
 			});
-		})
+		});
 
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
@@ -255,6 +255,11 @@
 		<div class="herocontainer">
 			<div class="hero">
 				<div class="text">
+					<img
+						class="hero-flag"
+						src="https://assets.hackclub.com/flag-standalone-wtransparent.svg"
+						alt="Hack Club flag"
+					/>
 					<h1 id="title">tell our stories.</h1>
 					<p id="body">
 						Hack Club is hiring 2 teenagers for a paid gap year to create videos, films, and other
