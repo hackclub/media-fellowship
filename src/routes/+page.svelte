@@ -316,7 +316,6 @@
 			>The job:</strong
 		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
 	</p>
-	<br />
 	<div class="button">
 		<a id="applyButton" href="https://example.com">Apply Now (x days remaining)</a>
 	</div>

@@ -135,7 +135,7 @@
 	overflow-wrap: anywhere;
 	font-size: clamp(16px, 3vh, 35px);
 	text-align: center;
-	color: var(--color-text-dim);
+	color: var(--color-text);
 }
 
 #applyButton {
@@ -200,9 +200,18 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: clamp(1rem, 3vh, 2rem);
 	padding: 15vh clamp(1.5rem, 8vw, 12rem);
 	background: var(--color-bg);
+}
+
+.fellowship-section .title {
+	margin-bottom: clamp(0.75rem, 2vh, 1.5rem);
+	text-align: center;
+	width: 100%;
+}
+
+.fellowship-section .fellowship-body {
+	margin-bottom: clamp(2rem, 5vh, 4rem);
 }
 
 .title {
@@ -247,7 +256,6 @@
 	text-align: right;
 }
 
-/* Mobile styles for hwyd section */
 @media (max-width: 768px) {
 	.hwyd-section {
 		width: 90vw;
@@ -274,7 +282,6 @@
 		text-align: center;
 	}
 
-	/* Reorder second panel so image comes first on mobile */
 	.hwyd-panel:nth-child(3) .panel-img {
 		order: -1;
 	}
