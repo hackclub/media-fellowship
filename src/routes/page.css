@@ -121,17 +121,6 @@ body {
 	pointer-events: none;
 }
 
-@media (max-width: 640px) {
-	.carousel-top {
-		margin-bottom: 20px;
-	}
-
-	.carousel-viewport {
-		--card-width: 240px;
-		--card-height: 160px;
-	}
-}
-
 .text {
 	display: flex;
 	flex-direction: column;
@@ -174,7 +163,7 @@ body {
 }
 
 #applyButton {
-	font-size: clamp(13px, 2.5vh, 25px);
+	font-size: clamp(13px, 2.5vw, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
 	border-width: 2px;
@@ -244,6 +233,8 @@ body {
 	font-family: var(--font-serif);
 	font-size: clamp(1rem, 3vw, 3rem);
 	color: var(--color-accent);
+	text-align: center;
+	width: 100%;
 }
 
 .hwyd-section {
@@ -310,6 +301,23 @@ body {
 	/* Reorder second panel so image comes first on mobile */
 	.hwyd-panel:nth-child(3) .panel-img {
 		order: -1;
+	}
+
+	.carousel-top {
+		margin-bottom: 20px;
+	}
+
+	.carousel-viewport {
+		--card-width: 240px;
+		--card-height: 160px;
+	}
+
+	.fellowship-section {
+		padding: 10vh clamp(1rem, 5vw, 2rem);
+	}
+
+	.title {
+		font-size: clamp(1.25rem, 5vw, 2rem);
 	}
 }
 
@@ -381,11 +389,19 @@ body {
 	transform: scaleX(1);
 }
 
-.footer{
+.footer {
 	margin-top: 5rem;
 	text-align: center;
 	font-family: "Glyseric", "serif";
 	color: var(--color-overlay-medium);
 	padding: 2rem 30vw;
-	font-size: 1.5vw
+	font-size: 0.75vw
+}
+
+u {
+	text-decoration: none;
+}
+
+u:hover {
+	text-decoration: underline;
 }
