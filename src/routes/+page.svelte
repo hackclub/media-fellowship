@@ -378,5 +378,6 @@
 		<u><a href="https://github.com/sadeshmukh">sadeshmukh</a></u>,
 		<u><a href="https://github.com/maxstellar">maxstellar</a></u>, and
 		<u><a href="https://github.com/astratheboop">astra celestine</a></u>.
+		<u><a href="https://github.com/hackclub/novella">always OSS</a>.</u>
 	</p>
 </section>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -27,6 +28,10 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+}
+
+html {
+	overflow-x: hidden;
 }
 
 :root {
