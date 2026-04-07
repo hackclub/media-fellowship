@@ -92,13 +92,15 @@
 			window.removeEventListener('resize', resetPositions);
 		};
 	}
+
 	onMount(() => {
 		const scrollDown = document.getElementById('scroll-down') as HTMLParagraphElement;
-
 		scrollDown.addEventListener('click', () => {
+			const opacity = parseFloat(getComputedStyle(scrollDown).opacity);
+			if (opacity < 1) return;
+
 			const container = document.querySelector('.hero-scroll-container') as HTMLElement;
 			const scrollableHeight = container.scrollHeight - window.innerHeight;
-			console.log('test');
 			window.scrollTo({
 				top: scrollableHeight * 0.85,
 				behavior: 'smooth'
@@ -188,6 +190,7 @@
 		const carouselBottom = heroScrollContainer.querySelector<HTMLElement>('.carousel-bottom');
 		const typingWordEls = heroScrollContainer.querySelectorAll<HTMLElement>('.typing-word');
 		const total = typingWordEls.length;
+		const scrollDownEl = document.getElementById('scroll-down') as HTMLElement;
 
 		const onScroll = () => {
 			if (!heroScrollContainer) return;
@@ -196,10 +199,10 @@
 			const progress = Math.max(0, Math.min(1, -rect.top / scrollableHeight));
 
 			// Hero text fades out: progress 0.2→0.38
-			const heroFade = Math.max(0, Math.min(1, (progress - 0.2) / 0.18));
+			const heroFade = Math.max(0, Math.min(1, (progress - 0.1) / 0.18));
 			if (heroEl) heroEl.style.opacity = String(1 - heroFade);
+			scrollDownEl.style.pointerEvents = heroFade > 0 ? 'none' : 'auto';
 
-			// Words type in: progress 0.38→0.85 (carousels still visible as backdrop)
 			const wordProgress = Math.max(0, Math.min(1, (progress - 0.38) / 0.47));
 			const fadeWindow = 3 / total;
 
@@ -208,13 +211,11 @@
 				const wp = Math.max(0, Math.min(1, (wordProgress - start) / fadeWindow));
 				word.style.opacity = String(wp);
 
-				// Trigger underline draw once the span is mostly faded in
 				if (word.classList.contains('typing-underline')) {
 					word.classList.toggle('underline-visible', wp > 0.5);
 				}
 			});
 
-			// Top carousel slides up, bottom carousel fades out: progress 0.85→1.0
 			const carouselProgress = Math.max(0, Math.min(1, (progress - 0.93) / 0.07));
 			if (carouselTop) {
 				carouselTop.style.transform = `translateY(${-carouselProgress * 110}%)`;
