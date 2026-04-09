@@ -389,10 +389,17 @@
 		<div class="panel-text right">
 			<h3 class="stitle">Get mentored by Open Sauce creators</h3>
 			<p class="sbody">
-				Work directly with creators from Open Sauce - including Michael Reeves and William Osman -
+				Work directly with creators from Open Sauce, like Michael Reeves and William Osman,
 				receiving hands-on mentorship while collaborating on content.
 			</p>
 		</div>
+	</div>
+</section>
+
+<section class="cta-section">
+	<h1 class="title">The door is open.</h1>
+	<div class="button">
+		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship">Apply Now ({daysUntilDue} days remaining)</a>
 	</div>
 </section>
 
