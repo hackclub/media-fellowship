@@ -261,6 +261,11 @@
 	max-width: 40%;
 	height: auto;
 	display: block;
+	transition: transform 0.3s ease;
+}
+
+.panel-img:hover {
+	transform: scale(1.05);
 }
 
 .panel-text {
@@ -463,7 +468,8 @@ u:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 2vw;
+	gap: 1vw;
+	margin-bottom: 4vh;
 }
 
 #linkButton {
@@ -494,7 +500,6 @@ u:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 15vh clamp(1.5rem, 8vw, 12rem);
 	background: var(--color-bg);
 }
 
@@ -508,7 +513,6 @@ u:hover {
 }
 
 .hack-club-section .title {
-	margin-bottom: clamp(0.75rem, 2rem, 1.5rem);
 	text-align: center;
 	width: 100%;
 }
@@ -549,6 +553,7 @@ u:hover {
 }
 
 .programs-grid {
+	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 36px;

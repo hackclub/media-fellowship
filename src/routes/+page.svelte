@@ -365,15 +365,10 @@
 </section>
 
 <section class="hack-club-section">
-	<h2 class="title">So what is Hack Club?</h2>
-	<p class="hc-body">
-		We are a 501(c)(3) global non-profit organization based in the U.S. aimed at supporting
-		teenagers worldwide interested in engineering and coding to develop and grow. In the past we've
-		... [PLACEHOLDER]
-	</p>
+	<h2 class="title">What even is Hack Club?</h2>
 	<div class="button-container">
 		<div class="button">
-			<a id="linkButton" href="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
+			<a id="linkButton" aria-label="YouTube" href="https://www.youtube.com/@hackclubhq"
 				><svg
 					fill-rule="evenodd"
 					clip-rule="evenodd"
@@ -386,7 +381,6 @@
 					fill="currentColor"
 					width="48"
 					height="48"
-					title="youtube"
 					><path d="M20.0065 15.7665L13.5265 19.1265L13.522 12.384L20.0065 15.7665Z"></path><path
 						d="M15.7501 6C20.8501 6 22.9971 6.576 24.0861 7.665C25.1751 8.754 25.7501 10.9 25.7501 16C25.7501 21.1 25.1751 23.247 24.0861 24.336C22.9971 25.425 20.8501 26 15.7501 26C10.6501 26 8.50306 25.425 7.41406 24.336C6.32506 23.247 5.75006 21.1 5.75006 16C5.75006 10.9 6.32506 8.753 7.41406 7.665C8.50306 6.576 10.6501 6 15.7501 6ZM27.7501 16C27.7501 6 25.7501 4 15.7501 4C5.75006 4 3.75006 6 3.75006 16C3.75006 26 5.75006 28 15.7501 28C25.7501 28 27.7501 26 27.7501 16Z"
 					></path></svg
@@ -394,7 +388,7 @@
 			>
 		</div>
 		<div class="button">
-			<a id="linkButton" href="https://www.instagram.com/starthackclub/"
+			<a id="linkButton" aria-label="Instagram" href="https://www.instagram.com/starthackclub/"
 				><svg
 					fill-rule="evenodd"
 					clip-rule="evenodd"
@@ -407,7 +401,6 @@
 					fill="currentColor"
 					width="48"
 					height="48"
-					title="instagram"
 					><path
 						d="M16 6c5.1 0 7.247.575 8.336 1.664C25.425 8.753 26 10.9 26 16s-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.336C8.753 6.575 10.9 6 16 6zm0-2c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4z"
 					></path><path
@@ -417,10 +410,13 @@
 			>
 		</div>
 	</div>
+	<p class="hc-body">
+		We are a 501(c)(3) global non-profit organization based in the United States. We create real adventures, online programs, and provide community for technical teenagers. [To be continued]
+	</p>
 </section>
 
 <section class="past-events">
-	<h1 class="stitle">In the past year, we have organized [PLACEHOLDER]</h1>
+	<h1 class="title">In the past year, we have organized...</h1>
 	<div class="programs-grid">
 		<a class="program-card" href="https://flagship.hackclub.com" target="_blank" rel="noopener">
 			<img
@@ -472,7 +468,7 @@
 			/>
 			<p class="program-card-desc">
 				From October 2025 to March 2026, Blueprint gave $140,000 to fund 1,500 hardware and
-				electronics projects built by 1000 teenagers from 77 countries
+				electronics projects built by 1000 teenagers from 77 countries!
 			</p>
 		</a>
 
@@ -490,11 +486,11 @@
 			/>
 			<p class="program-card-desc">
 				A 14 week event where 250 teens created a project each week to work towards a laptop with
-				over 100 framework laptops given out.
+				over 100 Framework laptops given out!
 			</p>
 		</a>
 	</div>
-	<h2 id="andsomuchmore">... and so much more...</h2>
+	<h2 id="andsomuchmore">and so much more!</h2>
 	<div class="programs-more-grid">
 		<a class="mini-card" href="https://summer.hackclub.com" target="_blank" rel="noopener" style="background-image:url('https://manifesto.hackclub.com/images/summer-of-making.png');background-size:cover;background-position:bottom">
 			<img class="mini-card-logo" src="https://manifesto.hackclub.com/images/som-logo.png" alt="Summer of Making" style="width:60%;height:auto" />
@@ -537,7 +533,7 @@
 </section>
 
 <section class="blogs">
-	<h1 class="stitle">Blogs from [PLACEHOLDER]</h1>
+	<h1 class="stitle">Here's what people who've worked with us have to say:</h1>
 	<a
 		href="https://journal.tongyu.fish/gapyear/"
 		target="_blank"
@@ -568,7 +564,7 @@
 		<div class="notes-card-text">
 			<p class="notes-card-title">
 				The plan for hack club world dominance <span class="notes-card-subtitle"
-					>(brief rundown on hack club!)</span
+					>(brief rundown on Hack Club!)</span
 				> →
 			</p>
 			<p class="notes-card-author">Written by Deven, YSWS Lead @ Hack Club</p>
@@ -577,7 +573,7 @@
 </section>
 
 <section class="hwyd-section">
-	<h2 class="title">Here's what you'll do.</h2>
+	<h2 class="title">Here's what <span style="text-decoration: underline;">you'll</span> do.</h2>
 	<div class="hwyd-panel">
 		<img
 			class="panel-img left"
@@ -596,14 +592,13 @@
 		<div class="panel-text left">
 			<h3 class="stitle">Run our social media</h3>
 			<p class="sbody">
-				Own our presence across YouTube, Instagram, TikTok, Twitter, and more. You'll post
-				frequently and craft compelling stories alongside our community.
+				Be responsible for our social media presence across YouTube, Instagram, TikTok, Twitter, and more. Meet Hack Clubbers and 
 			</p>
 		</div>
 		<img
 			class="panel-img right"
-			alt="Collage of Hack Club events"
-			src="https://cdn.hackclub.com/019d657c-8346-7a39-acbf-e083a5e26edf/image%20(13).png"
+			alt="Collage of Hack Clubbers doing media"
+			src="og.png"
 		/>
 	</div>
 	<div class="hwyd-panel">
@@ -616,7 +611,7 @@
 			<h3 class="stitle">Get mentored by Open Sauce creators</h3>
 			<p class="sbody">
 				Work directly with creators from Open Sauce, like Michael Reeves and William Osman,
-				receiving hands-on mentorship while collaborating on content.
+				receiving hands-on mentorship and collaborating on content.
 			</p>
 		</div>
 	</div>
@@ -631,7 +626,7 @@
 			>
 		</div>
 		<div class="button">
-			<a id="linkButton">Read the Hacker Novella ↗</a>
+			<a id="linkButton">A note from the designers ↗</a>
 		</div>
 
 	</div>
