@@ -365,7 +365,11 @@
 </section>
 
 <section class="hack-club-section">
-	<h2 class="title">What even is <span id="hack-club"><a href="https://hackclub.com" target="_blank">Hack Club</a></span>?</h2>
+	<h2 class="title">
+		What even is <span id="hack-club"
+			><a href="https://hackclub.com" target="_blank">Hack Club</a></span
+		>?
+	</h2>
 	<div class="button-container">
 		<div class="button">
 			<a id="linkButton" aria-label="YouTube" href="https://www.youtube.com/@hackclubhq"
