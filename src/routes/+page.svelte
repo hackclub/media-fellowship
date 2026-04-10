@@ -367,14 +367,8 @@
 
 <section class="hack-club-section">
 	<h2 class="title">So what is Hack Club?</h2>
-	<p class="fellowship-body">
-		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare & benefits.
-		It's intended to be something you do for a year before you go to college or whatever your plans
-		are after high school, but if you are on an alternate schooling path, that works too!<br /><br
-	/>You will be spending time at Hack Club HQ, working on projects and making videos with the
-		team, as well as travelling all over the world to different Hack Club events!<br /><br /><strong
-	>The job:</strong
-	> Make Hack Club a household name. Reach new audiences and as many teens as you can.
+	<p class="hc-body">
+		We are a 501(c)(3) global non-profit organization based in the U.S. aimed at supporting teenagers worldwide interested in engineering and coding to develop and grow. In the past we've ... [PLACEHOLDER]
 	</p>
 	<div class="button">
 		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"

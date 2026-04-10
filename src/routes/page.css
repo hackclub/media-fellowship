@@ -485,3 +485,43 @@ u:hover {
 	background-color: var(--color-accent);
 	border-color: var(--color-accent);
 }
+
+.hack-club-section{
+	font-family: 'Glyseric', 'serif';
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15vh clamp(1.5rem, 8vw, 12rem);
+	background: var(--color-bg);
+}
+
+.hc-body{
+	font-family: 'Glyseric';
+	font-size: clamp(1rem, 2.5vw, 1.75rem);
+	max-width: 60ch;
+	text-align: center;
+	color: var(--color-text-dim);
+	line-height: 1.6;
+}
+
+.hack-club-section {
+	min-height: 80dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15vh clamp(1.5rem, 8vw, 12rem);
+	background: var(--color-bg);
+}
+
+.hack-club-section .title {
+	margin-bottom: clamp(0.75rem, 2rem, 1.5rem);
+	text-align: center;
+	width: 100%;
+}
+
+.hack-club-section .hc-body {
+	margin-bottom: clamp(2rem, 5vh, 4rem);
+}
