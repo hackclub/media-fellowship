@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 	import { bottomCarouselImages, topCarouselImages } from '$lib/carousel';
 	import './page.css';
 
 	//** IMPORTANT: CHANGE LATER TO ACTUAL DUE DATE FOR APPLICATION **
 	const DUE_YEAR: number = 2026;
-	const DUE_MONTH: number = 12;
-	const DUE_DAY: number = 31;
+	const DUE_MONTH: number = 4;
+	const DUE_DAY: number = 24;
 
 	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
 	const daysUntilDue: number = Math.ceil((dueDate.getTime() - Date.now()) / 86400000);
@@ -278,13 +279,34 @@
 					/>
 					<h1 id="title">tell our stories.</h1>
 					<p id="body">
-						Hack Club is hiring 2 teenagers to record the stories of the next generation of
-						<strong class="hero-highlight"
-							>{#key heroHighlightWordIndex}<span
-								class="hero-highlight-word"
-							>{HERO_HIGHLIGHT_WORDS[heroHighlightWordIndex]}.</span>{/key}</strong
-						>
+						Hack Club is hiring 2 teenagers to record the stories
+						<span class="hero-body-crossfade-wrapper">
+							<span class="hero-body-crossfade hero-body-crossfade-sizer" aria-hidden="true">
+								of the next generation of <strong class="hero-highlight"
+									>{HERO_HIGHLIGHT_WORDS.reduce((a, b) => (a.length >= b.length ? a : b))}.</strong
+								>
+							</span>
+							{#key heroHighlightWordIndex}
+								<span
+									class="hero-body-crossfade"
+									in:fade={{ duration: 350 }}
+									out:fade={{ duration: 350 }}
+								>
+									of the next generation of <strong class="hero-highlight"
+										>{HERO_HIGHLIGHT_WORDS[heroHighlightWordIndex]}.</strong
+									>
+								</span>
+							{/key}
+						</span>
 					</p>
+				</div>
+				<div class="button">
+					<a
+						style="margin-top: 2vh;"
+						id="applyButton"
+						href="https://forms.hackclub.com/mediafellowship"
+						>Apply Now ({daysUntilDue} days remaining)</a
+					>
 				</div>
 				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 			</div>
@@ -328,16 +350,18 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid full-time in person role. $50k/year + all travel covered + healthcare & benefits.
+		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare & benefits.
 		It's intended to be something you do for a year before you go to college or whatever your plans
-		are after high school, but if you are on an alternate schooling path that works too!<br /><br
+		are after high school, but if you are on an alternate schooling path, that works too!<br /><br
 		/>You will be spending time at Hack Club HQ, working on projects and making videos with the
 		team, as well as travelling all over the world to different Hack Club events!<br /><br /><strong
 			>The job:</strong
 		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
 	</p>
 	<div class="button">
-		<a id="applyButton" href="https://example.com">Apply Now ({daysUntilDue} days remaining)</a>
+		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+			>Apply Now ({daysUntilDue} days remaining)</a
+		>
 	</div>
 </section>
 
@@ -380,10 +404,19 @@
 		<div class="panel-text right">
 			<h3 class="stitle">Get mentored by Open Sauce creators</h3>
 			<p class="sbody">
-				Work directly with creators from Open Sauce - including Michael Reeves and William Osman -
+				Work directly with creators from Open Sauce, like Michael Reeves and William Osman,
 				receiving hands-on mentorship while collaborating on content.
 			</p>
 		</div>
+	</div>
+</section>
+
+<section class="cta-section">
+	<h1 class="title">The door is open.</h1>
+	<div class="button">
+		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+			>Apply Now ({daysUntilDue} days remaining)</a
+		>
 	</div>
 </section>
 
