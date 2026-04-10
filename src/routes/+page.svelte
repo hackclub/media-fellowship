@@ -383,8 +383,32 @@
 
 <section class="past-events">
 	<h1 class="stitle">In the past year, we have organized [PLACEHOLDER]</h1>
-	<div id="eventcard-container">
-		<div></div>
+	<div class="programs-grid">
+		<a class="program-card" href="https://flagship.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="/images/campfire-flagship.png" alt="Campfire Flagship" />
+			<img class="program-card-logo" src="/images/campfire-flagship-logo.png" alt="Campfire Flagship logo" />
+			<p class="program-card-desc">A 3 day flagship game jam in Los Angeles with YouTubers like Michael Reeves, William Osman, and many more!</p>
+		</a>
+
+		<a class="program-card" href="https://midnight.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="/images/midnight.jpg" alt="Midnight" />
+			<div class="midnight-logo">
+				<img class="front" src="/images/midnight-logo.svg" alt="Midnight logo" />
+			</div>
+			<p class="program-card-desc">A murder-mystery hackathon held in Austria, Vienna with 60+ teenagers from all across the world!</p>
+		</a>
+
+		<a class="program-card" href="https://blueprint.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="/images/blueprint.png" alt="Blueprint" />
+			<img class="program-card-logo" src="/images/blueprint-logo.png" alt="Blueprint logo" style="width:300px" />
+			<p class="program-card-desc">From October 2025 to March 2026, Blueprint gave $140,000 to fund 1,500 hardware and electronics projects built by 1000 teenagers from 77 countries</p>
+		</a>
+
+		<a class="program-card" href="https://siege.hackclub.com" target="_blank" rel="noopener">
+			<img class="program-card-img" src="/images/siege.png" alt="Siege" />
+			<img class="program-card-logo" src="/images/siege-logo.png" alt="Siege logo" style="width:161px" />
+			<p class="program-card-desc">A 14 week event where 250 teens created a project each week to work towards a laptop with over 100 framework laptops given out.</p>
+		</a>
 	</div>
 </section>
 
