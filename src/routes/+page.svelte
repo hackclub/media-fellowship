@@ -757,7 +757,7 @@
 	<p>
 		made with &lt;3 by <u><a href="https://github.com/hellonearth311">hellonearth311</a></u>,
 		<u><a href="https://github.com/sadeshmukh">sadeshmukh</a></u>,
-		<u><a href="https://github.com/maxstellar">maxstellar</a></u>
+		<u><a href="https://github.com/maxstellar">maxstellar</a></u>,
 		<u><a href="https://github.com/astra-the-boop">astra celestine</a></u>, and
 		<u><a href="https://github.com/mntrushmore">rushmore</a></u>.
 		<u><a href="https://github.com/hackclub/novella">always OSS</a>.</u>
