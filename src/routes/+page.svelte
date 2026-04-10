@@ -717,7 +717,7 @@
 			<h3 class="stitle">Run our social media</h3>
 			<p class="sbody">
 				You'll have full control over our social media presence across YouTube, Instagram, TikTok,
-				Twitter, and more. Make videos + films about all the amazing people you'll meet.
+				Twitter, and more, to post about all the amazing people you'll meet.
 			</p>
 		</div>
 		<img class="panel-img right" alt="Collage of Hack Clubbers doing media" src="og.png" />
