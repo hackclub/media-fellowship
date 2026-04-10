@@ -803,3 +803,26 @@ u:hover {
 		font-size: clamp(14px, 3.5vw, 18px);
 	}
 }
+
+#hack-club {
+	position: relative;
+	color: #fff;
+	cursor: pointer;
+}
+
+#hack-club::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 100%;
+	height: 2px;
+	background: currentColor;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
+}
+
+#hack-club:hover::after {
+	transform: scaleX(1);
+}
