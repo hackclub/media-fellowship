@@ -303,9 +303,8 @@
 				<div class="button">
 					<a
 						style="margin-top: 2vh;"
-						id="applyButton"
 						href="https://forms.hackclub.com/mediafellowship"
-						>Apply Now ({daysUntilDue} days remaining)</a
+						class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
 					>
 				</div>
 				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
@@ -350,16 +349,16 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare & benefits.
-		It's intended to be something you do for a year before you go to college or whatever your plans
-		are after high school, but if you are on an alternate schooling path, that works too!<br /><br
-		/>You will be spending time at Hack Club HQ, working on projects and making videos with the
-		team, as well as travelling all over the world to different Hack Club events!<br /><br /><strong
-			>The job:</strong
-		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
+		This is a paid, full-time, in-person role. $50k/year + all travel covered + healthcare &
+		benefits. It's intended to be something you do for a year before you go to college or whatever
+		your plans are after high school, but if you are on an alternate schooling path, that works too!<br
+		/><br />You will be spending time at Hack Club HQ, working on projects and making videos with
+		the team, as well as travelling all over the world to different Hack Club events!<br /><br
+		/><strong>The job:</strong> Make Hack Club a household name. Reach new audiences and as many teens
+		as you can.
 	</p>
 	<div class="button">
-		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
 			>Apply Now ({daysUntilDue} days remaining)</a
 		>
 	</div>
@@ -368,11 +367,13 @@
 <section class="hack-club-section">
 	<h2 class="title">So what is Hack Club?</h2>
 	<p class="hc-body">
-		We are a 501(c)(3) global non-profit organization based in the U.S. aimed at supporting teenagers worldwide interested in engineering and coding to develop and grow. In the past we've ... [PLACEHOLDER]
+		We are a 501(c)(3) global non-profit organization based in the U.S. aimed at supporting
+		teenagers worldwide interested in engineering and coding to develop and grow. In the past we've
+		... [PLACEHOLDER]
 	</p>
 	<div class="button">
-		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
-		>Apply Now ({daysUntilDue} days remaining)</a
+		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
+			>Apply Now ({daysUntilDue} days remaining)</a
 		>
 	</div>
 </section>
@@ -426,7 +427,7 @@
 <section class="cta-section">
 	<h1 class="title">The door is open.</h1>
 	<div class="button">
-		<a id="applyButton" href="https://forms.hackclub.com/mediafellowship"
+		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
 			>Apply Now ({daysUntilDue} days remaining)</a
 		>
 	</div>

@@ -157,7 +157,7 @@
 	color: #ec3750;
 }
 
-#applyButton {
+.apply-button {
 	font-size: clamp(10px, 2vh, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
@@ -169,7 +169,7 @@
 	border-color: #ffffff;
 }
 
-#applyButton:hover {
+.apply-button:hover {
 	color: var(--color-bg);
 	background-color: #ffffff;
 	border-color: #ffffff;
@@ -434,7 +434,7 @@ u:hover {
 	font-size: clamp(30px, 7vh, 75px);
 }
 
-.cta-section #applyButton {
+.cta-section .apply-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -444,20 +444,20 @@ u:hover {
 	border: 2px solid #fff;
 	border-radius: 9999px;
 	font-size: clamp(10px, 3vh, 25px);
-	font-family: Glyseric,Newsreader,sans-serif;
+	font-family: Glyseric, Newsreader, sans-serif;
 	color: #fff;
 	text-decoration: none;
-	transition: background .5s,color .5s;
-	margin-top: 2vh
+	transition:
+		background 0.5s,
+		color 0.5s;
+	margin-top: 2vh;
 }
 
-.cta-section #applyButton:hover {
+.cta-section .apply-button:hover {
 	color: var(--color-bg);
 	background-color: #ffffff;
 	border-color: #fff;
 }
-
-
 
 .button-container {
 	display: flex;
@@ -473,8 +473,8 @@ u:hover {
 	border-width: 2px;
 	padding: 6px 16px;
 	transition:
-			background-color 0.5s,
-			color 0.5s;
+		background-color 0.5s,
+		color 0.5s;
 	border-color: var(--color-accent);
 	margin-top: 1.5vh;
 	cursor: pointer;
@@ -486,27 +486,8 @@ u:hover {
 	border-color: var(--color-accent);
 }
 
-.hack-club-section{
-	font-family: 'Glyseric', 'serif';
-	min-height: 100dvh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 15vh clamp(1.5rem, 8vw, 12rem);
-	background: var(--color-bg);
-}
-
-.hc-body{
-	font-family: 'Glyseric';
-	font-size: clamp(1rem, 2.5vw, 1.75rem);
-	max-width: 60ch;
-	text-align: center;
-	color: var(--color-text-dim);
-	line-height: 1.6;
-}
-
 .hack-club-section {
+	font-family: 'Glyseric', 'serif';
 	min-height: 80dvh;
 	display: flex;
 	flex-direction: column;
@@ -514,6 +495,15 @@ u:hover {
 	justify-content: center;
 	padding: 15vh clamp(1.5rem, 8vw, 12rem);
 	background: var(--color-bg);
+}
+
+.hc-body {
+	font-family: 'Glyseric';
+	font-size: clamp(1rem, 2.5vw, 1.75rem);
+	max-width: 60ch;
+	text-align: center;
+	color: var(--color-text-dim);
+	line-height: 1.6;
 }
 
 .hack-club-section .title {
