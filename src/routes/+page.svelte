@@ -311,6 +311,7 @@
 								class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
 							>
 						</div>
+						<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 					</div>
 					<figure class="hero-video-figure">
 						<iframe
@@ -326,7 +327,6 @@
 						</figcaption>
 					</figure>
 				</div>
-				<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 			</div>
 		</div>
 
