@@ -431,26 +431,57 @@ u:hover {
 }
 
 .cta-section .title {
-	font-size: clamp(24px, 6vh, 75px);
+	font-size: clamp(30px, 7vh, 75px);
 }
 
 .cta-section #applyButton {
-	margin-top: 1vh;
-	font-weight: bold;
-	color: #ec3750;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	padding: 0 clamp(9px, 3vh, 20px);
+	height: clamp(10px, 10vh, 60px);
+	border: 2px solid #fff;
+	border-radius: 9999px;
+	font-size: clamp(10px, 3vh, 25px);
+	font-family: Glyseric,Newsreader,sans-serif;
+	color: #fff;
+	text-decoration: none;
+	transition: background .5s,color .5s;
+	margin-top: 2vh
+}
+
+.cta-section #applyButton:hover {
+	color: var(--color-bg);
+	background-color: #ffffff;
+	border-color: #fff;
+}
+
+
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#linkButton {
+	color: var(--color-accent);
 	font-size: clamp(10px, 2vh, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
 	border-width: 2px;
 	padding: 6px 16px;
 	transition:
-		background-color 0.5s,
-		color 0.5s;
-	border-color: #ec3750;
+			background-color 0.5s,
+			color 0.5s;
+	border-color: var(--color-accent);
+	margin-top: 1.5vh;
+	cursor: pointer;
 }
 
-.cta-section #applyButton:hover {
+#linkButton:hover {
 	color: var(--color-bg);
-	background-color: #ec3750;
-	border-color: #ec3750;
+	background-color: var(--color-accent);
+	border-color: var(--color-accent);
 }
