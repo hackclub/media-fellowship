@@ -528,7 +528,8 @@ u:hover {
 .past-events .stitle{
 	text-align: left;
 	color: var(--color-text-dim);
-	font-size: clamp(1.4rem, 2.3vw, 2.75rem);
+	font-size: clamp(1.4rem, 2.7vw, 2.75rem);
+	margin-bottom: -3rem;
 }
 
 .programs-headline {
