@@ -926,7 +926,7 @@ u:hover {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	gap: 2vw;
 }
@@ -939,7 +939,7 @@ u:hover {
 
 .videos-body .title {
 	color: var(--color-text-dim);
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 
 #fallout,
@@ -947,6 +947,16 @@ u:hover {
 	aspect-ratio: 16 / 9;
 	width: clamp(250px, 35vw, 750px);
 	height: auto;
+}
+
+.video-container{
+	max-width: clamp(250px, 35vw, 750px);
+}
+
+.videos-subtext{
+	margin-top: 1.5rem;
+	font-size: clamp(14px, 1.3vw, 20px);
+	color: var(--color-text-dim);
 }
 
 @media (max-width: 768px) {
@@ -981,4 +991,17 @@ u:hover {
 	.hc-body {
 		padding: 0 1rem;
 	}
+}
+
+.videos-body h3{
+	font-size: clamp(14px, 1.7vw, 30px);
+}
+
+#video-disclaimer-container{
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--color-overlay-medium);
+	font-weight:bold;
+	margin-bottom: 3rem;
 }
