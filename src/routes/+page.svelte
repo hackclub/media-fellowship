@@ -443,7 +443,12 @@
 	</p>
 	<section class="videos-body">
 		<h1 class="title">Some videos we've posted before:</h1>
-		<div id="video-disclaimer-container"><h3>Disclaimer: You don't have to follow this style! It's just an example of what we've posted before</h3></div>
+		<div id="video-disclaimer-container">
+			<h3>
+				Disclaimer: You don't have to follow this style! It's just an example of what we've posted
+				before
+			</h3>
+		</div>
 
 		<div id="videos-container">
 			<div class="video-container">
@@ -458,7 +463,9 @@
 					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></iframe>
-				<p class="videos-subtext">Fallout: An upcoming hardware hackathon taking place in Shenzhen, China this summer!</p>
+				<p class="videos-subtext">
+					Fallout: An upcoming hardware hackathon taking place in Shenzhen, China this summer!
+				</p>
 			</div>
 			<div class="video-container">
 				<iframe
@@ -472,7 +479,9 @@
 					referrerpolicy="strict-origin-when-cross-origin"
 					allowfullscreen
 				></iframe>
-				<p class="videos-subtext">Shipwrecked: A four-day hackathon on a private island we organized last summer!</p>
+				<p class="videos-subtext">
+					Shipwrecked: A four-day hackathon on a private island we organized last summer!
+				</p>
 			</div>
 		</div>
 	</section>
@@ -705,7 +714,9 @@
 </section>
 
 <section class="hwyd-section">
-	<h2 class="title">Here's what <i><span style="font-family: Garamond; font-weight: bold">you'll</span></i> do.</h2>
+	<h2 class="title">
+		Here's what <i><span style="font-family: Garamond; font-weight: bold">you'll</span></i> do.
+	</h2>
 	<div class="hwyd-panel">
 		<img
 			class="panel-img left"

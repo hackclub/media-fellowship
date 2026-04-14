@@ -949,11 +949,11 @@ u:hover {
 	height: auto;
 }
 
-.video-container{
+.video-container {
 	max-width: clamp(250px, 35vw, 750px);
 }
 
-.videos-subtext{
+.videos-subtext {
 	margin-top: 1.5rem;
 	font-size: clamp(14px, 1.3vw, 20px);
 	color: var(--color-text-dim);
@@ -993,15 +993,15 @@ u:hover {
 	}
 }
 
-.videos-body h3{
+.videos-body h3 {
 	font-size: clamp(14px, 1.7vw, 30px);
 }
 
-#video-disclaimer-container{
+#video-disclaimer-container {
 	max-width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 	color: var(--color-overlay-medium);
-	font-weight:bold;
+	font-weight: bold;
 	margin-bottom: 3rem;
 }
