@@ -113,7 +113,7 @@
 			if you dive in, you’ll find yourself surrounded by people who inspire you and push you to
 			build amazing things. Embark on the adventure, and great things will happen.
 		</p>
-		<p style="color: var(--color-text-dim);">- Rushil, 2026 Summer Intern</p>
+		<p style="color: var(--color-text-dim);">- Rushil Chopra, 2026 Summer Intern</p>
 	</div>
 </div>
 
