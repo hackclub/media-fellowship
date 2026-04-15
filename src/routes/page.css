@@ -140,6 +140,14 @@
 	max-height: 30vh;
 }
 
+.hero-video-annotation {
+	font-family: 'Glyseric';
+	font-size: clamp(0.75rem, 1.2vw, 1rem);
+	color: var(--color-text-dim);
+	text-align: right;
+	margin: 0 0 0.4em 0;
+}
+
 .hero-video-caption {
 	font-family: 'Glyseric';
 	font-size: clamp(0.75rem, 1.2vw, 1rem);

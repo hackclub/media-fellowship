@@ -320,6 +320,7 @@
 						<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 					</div>
 					<figure class="hero-video-figure">
+						<p class="hero-video-annotation">made by <a href="https://www.instagram.com/paoloaverycarino/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">Paolo</a>, our media gap year last year ↓</p>
 						<iframe
 							class="hero-video"
 							src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
