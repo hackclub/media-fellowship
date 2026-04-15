@@ -15,7 +15,10 @@
 		/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://media-fellowship.hackclub.com" />
-		<meta property="og:image" content="https://cdn.hackclub.com/019d923c-5c70-7146-9796-ff5a1fe85a52/og.jpg" />
+		<meta
+			property="og:image"
+			content="https://cdn.hackclub.com/019d923c-5c70-7146-9796-ff5a1fe85a52/og.jpg"
+		/>
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="628" />
 		<meta property="og:site_name" content="Hack Club Media Gap Year Fellowship" />
@@ -25,13 +28,25 @@
 			name="twitter:description"
 			content="Hack Club is hiring 2 teenagers to record the stories of the next generation of hackers."
 		/>
-		<meta name="twitter:image" content="https://cdn.hackclub.com/019d923c-5c70-7146-9796-ff5a1fe85a52/og.jpg" />
+		<meta
+			name="twitter:image"
+			content="https://cdn.hackclub.com/019d923c-5c70-7146-9796-ff5a1fe85a52/og.jpg"
+		/>
 		<title>Tell Our Stories.</title>
 		%sveltekit.head%
 		<script async src="https://plausible.io/js/pa-20ZMRx3sykInmK4DPWw2k.js"></script>
 		<script>
-			window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-			plausible.init()
+			((window.plausible =
+				window.plausible ||
+				function () {
+					(plausible.q = plausible.q || []).push(arguments);
+				}),
+				(plausible.init =
+					plausible.init ||
+					function (i) {
+						plausible.o = i || {};
+					}));
+			plausible.init();
 		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">

@@ -766,6 +766,29 @@ u:hover {
 	}
 }
 
+@media (max-width: 600px) {
+	.hero {
+		transform: translate(-50%, -50%);
+		max-height: 92vh;
+	}
+
+	.hero-row {
+		gap: 0.75rem;
+	}
+
+	.hero-video-figure {
+		gap: 0.2rem;
+	}
+
+	.hero-video-annotation {
+		display: none;
+	}
+
+	#scroll-down {
+		margin-top: 1vh;
+	}
+}
+
 @media (max-width: 768px) {
 	/* hwyd */
 	.hwyd-section {

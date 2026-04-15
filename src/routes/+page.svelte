@@ -286,7 +286,8 @@
 							/>
 							<h1 id="title">tell our stories.</h1>
 							<p id="body">
-								Hack Club is hiring 2 teenage filmmakers to travel the world making films about the next generation of
+								Hack Club is hiring 2 teenage filmmakers to travel the world making films about the
+								next generation of
 								<span class="hero-body-crossfade-wrapper">
 									<span class="hero-body-crossfade hero-body-crossfade-sizer" aria-hidden="true">
 										<strong class="hero-highlight"
@@ -308,7 +309,12 @@
 									{/key}
 								</span>
 							</p>
-							<p style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em;">Full-time, in-person &middot; 1 year, $50,000 USD &middot; $10k travel + $5k equipment budget</p>
+							<p
+								style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em;"
+							>
+								Full-time, in-person &middot; 1 year, $50,000 USD &middot; $10k travel + $5k
+								equipment budget
+							</p>
 						</div>
 						<div class="button">
 							<a
@@ -320,7 +326,14 @@
 						<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
 					</div>
 					<figure class="hero-video-figure">
-						<p class="hero-video-annotation">made by <a href="https://www.instagram.com/paoloaverycarino/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">Paolo</a>, our media gap year last year ↓</p>
+						<p class="hero-video-annotation">
+							made by <a
+								href="https://www.instagram.com/paoloaverycarino/"
+								target="_blank"
+								rel="noopener noreferrer"
+								style="text-decoration: underline; color: inherit;">Paolo</a
+							>, our media gap year last year ↓
+						</p>
 						<iframe
 							class="hero-video"
 							src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
@@ -330,7 +343,12 @@
 							allowfullscreen
 						></iframe>
 						<figcaption class="hero-video-caption">
-							<a href="https://shiba.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Hack Club Shiba</a> - Nov, 2025 in Tokyo, Japan
+							<a
+								href="https://shiba.hackclub.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								style="text-decoration: underline;">Hack Club Shiba</a
+							> - Nov, 2025 in Tokyo, Japan
 						</figcaption>
 					</figure>
 				</div>
@@ -360,7 +378,14 @@
 					{#if token.type === 'break'}
 						<br class="typing-word" />
 					{:else if token.type === 'link'}
-						<a class="typing-word" href={token.href} target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit; pointer-events: auto;">{token.text}</a>{WORD_SEPARATOR}
+						<a
+							class="typing-word"
+							href={token.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							style="text-decoration: underline; color: inherit; pointer-events: auto;"
+							>{token.text}</a
+						>{WORD_SEPARATOR}
 					{:else if token.type === 'underline'}
 						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
 					{:else if token.accent}
@@ -377,15 +402,16 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid, full-time, in-person role. $50k/year + $5k equipment stipend + $10k travel + healthcare & benefits at Hack Club HQ in Burlington, Vermont.
+		This is a paid, full-time, in-person role. $50k/year + $5k equipment stipend + $10k travel +
+		healthcare & benefits at Hack Club HQ in Burlington, Vermont.
 	</p>
 	<p class="fellowship-body">
-		It's intended to be something you do for a year before
-		you go to college or whatever your plans are after high school, but if you are on an alternate
-		schooling path, that works too!<br /><br />You will be based at Hack Club HQ, working on
-		projects and making videos with the team, as well as travelling all over the world to different
-		Hack Club events!<br /><br /><strong>The job:</strong> Make Hack Club a household name. Reach new
-		audiences and as many teens as you can.
+		It's intended to be something you do for a year before you go to college or whatever your plans
+		are after high school, but if you are on an alternate schooling path, that works too!<br /><br
+		/>You will be based at Hack Club HQ, working on projects and making videos with the team, as
+		well as travelling all over the world to different Hack Club events!<br /><br /><strong
+			>The job:</strong
+		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
 	</p>
 	<div class="button">
 		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
@@ -447,8 +473,12 @@
 	<p class="hc-body">
 		We are a 501(c)(3) global non-profit organization based in the United States. We host real
 		adventures, run online programs, and provide community for technical teenagers! Every year, our
-		community creates <a href="https://magazine.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">thousands of amazing projects</a>, and we ship out thousands of cool prizes, from
-		stickers to laptops to plushies of our mascot!
+		community creates <a
+			href="https://magazine.hackclub.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			style="text-decoration: underline;">thousands of amazing projects</a
+		>, and we ship out thousands of cool prizes, from stickers to laptops to plushies of our mascot!
 	</p>
 	<section class="videos-body">
 		<h1 class="title">Some videos we've posted before:</h1>
@@ -644,7 +674,11 @@
 		</a>
 
 		<a class="mini-card" href="https://shiba.hackclub.com" target="_blank" rel="noopener">
-			<img class="mini-card-bg" src="https://cdn.hackclub.com/019d9226-2fa5-736f-bb48-f4ccae39caab/manifesto.hackclub.com__images__shiba-bg.png.webp" alt="" />
+			<img
+				class="mini-card-bg"
+				src="https://cdn.hackclub.com/019d9226-2fa5-736f-bb48-f4ccae39caab/manifesto.hackclub.com__images__shiba-bg.png.webp"
+				alt=""
+			/>
 			<div class="mini-card-overlay"></div>
 			<img
 				class="mini-card-logo"
@@ -655,7 +689,11 @@
 		</a>
 
 		<a class="mini-card" href="https://hackpad.hackclub.com" target="_blank" rel="noopener">
-			<img class="mini-card-bg" src="https://cdn.hackclub.com/019d9226-0c75-75c8-abac-620f1e8975e4/manifesto.hackclub.com__images__hackpad-bg.png.webp" alt="" />
+			<img
+				class="mini-card-bg"
+				src="https://cdn.hackclub.com/019d9226-0c75-75c8-abac-620f1e8975e4/manifesto.hackclub.com__images__hackpad-bg.png.webp"
+				alt=""
+			/>
 			<img
 				class="mini-card-logo"
 				src="https://cdn.hackclub.com/019d9226-5507-7f24-9a1b-3cca3a1b8069/manifesto.hackclub.com__images__hackpad-logo.png.webp"
@@ -749,15 +787,17 @@
 		<img class="panel-img right" alt="Collage of Hack Clubbers doing media" src="og.jpg" />
 	</div>
 	<div class="hwyd-panel">
-		<img
-			class="panel-img left"
-			alt="Hack Club gap year teenagers"
-			src="/gap-years.webp"
-		/>
+		<img class="panel-img left" alt="Hack Club gap year teenagers" src="/gap-years.webp" />
 		<div class="panel-text right">
 			<h3 class="stitle">Join 40 other teenage gap years</h3>
 			<p class="sbody">
-				You'll join 40 technical teenage <a href="https://manifesto.hackclub.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: inherit;">gap years</a> from across the USA and world who design and run all of Hack Club's programs. Every program above was ran by 18 and 19 year old gap years at Hack Club.
+				You'll join 40 technical teenage <a
+					href="https://manifesto.hackclub.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					style="text-decoration: underline; color: inherit;">gap years</a
+				> from across the USA and world who design and run all of Hack Club's programs. Every program
+				above was ran by 18 and 19 year old gap years at Hack Club.
 			</p>
 		</div>
 	</div>
