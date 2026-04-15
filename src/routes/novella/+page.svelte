@@ -39,12 +39,12 @@
 		</div>
 		<h3>Max's Note</h3>
 		<p>
-			Hi there! My name is Max, and I'm a 15-year-old intern at Hack Club as well as the lead designer 
-			for this website! I wasn't tasked to write this by HQ, but over the course of making this site,
-			I felt like I wanted to write something for you to read. If you're reading this note, it
-			likely means you're thinking of applying to become a media gap year for Hack Club! Perhaps you
-			are skeptical. Of course, many of you will never have heard of Hack Club, or maybe you have
-			and you're still not convinced. Let me tell you why you should apply.
+			Hi there! My name is Max, and I'm a 15-year-old intern at Hack Club as well as the lead
+			designer for this website! I wasn't tasked to write this by HQ, but over the course of making
+			this site, I felt like I wanted to write something for you to read. If you're reading this
+			note, it likely means you're thinking of applying to become a media gap year for Hack Club!
+			Perhaps you are skeptical. Of course, many of you will never have heard of Hack Club, or maybe
+			you have and you're still not convinced. Let me tell you why you should apply.
 		</p>
 		<p>
 			<strong>1. You will meet amazing people.</strong>
