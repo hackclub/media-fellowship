@@ -101,9 +101,41 @@
 		<!-- <h3>Swarit's Note</h3>
 		<p></p>
 		<h3>Astra's Note</h3>
-		<p></p>
-		<h3>Sahil's Note</h3>
 		<p></p> -->
+		<h3>Sahil's Note</h3>
+		<p>
+			Heya! I'm Sahil, co-designer of the website & a 2026 summer intern here at Hack Club. I joined
+			Hack Club just around a year ago, and I didn't really know anybody else who was interested in
+			the same kinds of things I was, people who believe in making real, cool things. And you'd
+			never believe what you'd find at Hack Club - a community of tens of thousands of people who do
+			believe in those ideals. I've met so many people, in person and over the Slack, that have
+			taught me and shown me how.
+		</p>
+		<p>
+			The first in-person event I ever went to for Hack Club was Shipwrecked, in August. Shipwrecked
+			was a 3-day hackathon on an island right off Boston. It would be an understatement to say my
+			parents were surprised to hear me going off an all-expenses paid trip across the country when
+			I'd never done anything similar before. And at Shipwrecked - well, honestly, it was one of the
+			best experiences of my life. I've written more about it <a
+				href="https://blog.sahil.ink/shipwrecked/">here</a
+			> if you'd like to read more. Hack Club is transformative.
+		</p>
+		<p>
+			Enough about me. Let's talk about you, our future media gap year. You'll go to all of Hack
+			Club's events, game jams, hackathons, transit games (woot <a href="https://game.hackclub.com/"
+				>HCTG</a
+			>!). You'll see the pinnacle of HC, the contraptions made at
+			<a href="https://blueprint.hackclub.com/prototype">hardware hackathons</a> and viral creations
+			made by Hack Clubbers (<a href="https://github.com/kavishdevar/librepods">librepods</a>,
+			anybody?). You'll be the face of Hack Club, showing the world everything on the other side
+			with full creative agency.
+		</p>
+		<p>
+			Hack Club, to me, has been one of the most genuinely positively impactful things in my life,
+			and I'm convinced it'll be for you as well.
+		</p>
+		<p style="color: var(--color-text-dim);">- Sahil Deshmukh, 2026 Summer Intern</p>
+		<br />
 		<h3>Rushil's Note</h3>
 		<p>
 			Hey y’all, my name is Rushil and I’m a philanthropy intern at Hack Club. My journey started

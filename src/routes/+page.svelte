@@ -786,7 +786,11 @@
 				Twitter, and more, to post about all the amazing people you'll meet.
 			</p>
 		</div>
-		<img class="panel-img right" alt="Collage of Hack Clubbers doing media" src="og.jpg" />
+		<img
+			class="panel-img right"
+			alt="Collage of Hack Clubbers doing media"
+			src="https://cdn.hackclub.com/019d9306-76c7-7eff-8f6f-b56626d85f4e/run-our-social-media.png"
+		/>
 	</div>
 	<div class="hwyd-panel">
 		<img class="panel-img left" alt="Hack Club gap year teenagers" src="/gap-years.webp" />
