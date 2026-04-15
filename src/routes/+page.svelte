@@ -378,6 +378,7 @@
 					{#if token.type === 'break'}
 						<br class="typing-word" />
 					{:else if token.type === 'link'}
+						<!-- eslint-disable svelte/no-navigation-without-resolve -->
 						<a
 							class="typing-word"
 							href={token.href}
@@ -386,6 +387,7 @@
 							style="text-decoration: underline; color: inherit; pointer-events: auto;"
 							>{token.text}</a
 						>{WORD_SEPARATOR}
+						<!-- eslint-enable svelte/no-navigation-without-resolve -->
 					{:else if token.type === 'underline'}
 						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
 					{:else if token.accent}
