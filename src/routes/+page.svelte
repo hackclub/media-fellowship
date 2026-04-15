@@ -328,7 +328,9 @@
 							allowfullscreen
 						></iframe>
 						<figcaption class="hero-video-caption">
-							<a href="https://shiba.hackclub.com" target="_blank" rel="noopener noreferrer">Hack Club Shiba</a> - Nov, 2025 in Tokyo, Japan
+							<a href="https://shiba.hackclub.com" target="_blank" rel="noopener noreferrer"
+								>Hack Club Shiba</a
+							> - Nov, 2025 in Tokyo, Japan
 						</figcaption>
 					</figure>
 				</div>
