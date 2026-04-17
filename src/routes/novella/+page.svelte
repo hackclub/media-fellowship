@@ -100,14 +100,18 @@
 		<br />
 		<h3>Swarit's Note</h3>
 		<p>
-			Hi! I'm Swarit, the designer of this website, and a 14-year old who discovered Hack Club last year from a GitHub Education email and fell in love instantly. Hack Club is one of the best things that's happened to me, from being able to code for free stuff, to the community, to just the overall vibes in here. It's truly amazing and I'd love to see you here, whether you are technical or not. You will do so many things you never even thought were possible. 
+			Hi! I'm Swarit, the designer of this website, and a 14-year old who discovered Hack Club last
+			year from a GitHub Education email and fell in love instantly. Hack Club is one of the best
+			things that's happened to me, from being able to code for free stuff, to the community, to
+			just the overall vibes in here. It's truly amazing and I'd love to see you here, whether you
+			are technical or not. You will do so many things you never even thought were possible.
 		</p>
 		<p style="color: var(--color-text-dim);">- Swarit Narang, Hack Clubber</p>
 		<!--
 		<h3>Astra's Note</h3>
 		<p></p>
 	-->
-	
+
 		<h3>Sahil's Note</h3>
 		<p>
 			Heya! I'm Sahil, co-designer of the website & a 2026 summer intern here at Hack Club. I joined
