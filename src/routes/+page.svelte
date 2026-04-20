@@ -108,18 +108,22 @@
 	}
 
 	onMount(() => {
-		const scrollDown = document.getElementById('scroll-down') as HTMLParagraphElement;
-		scrollDown.addEventListener('click', () => {
-			const opacity = parseFloat(getComputedStyle(scrollDown).opacity);
-			if (opacity < 1) return;
+		const scrollDown = document.querySelectorAll('.scroll-down');
 
-			const container = document.querySelector('.hero-scroll-container') as HTMLElement;
-			const scrollableHeight = container.scrollHeight - window.innerHeight;
-			window.scrollTo({
-				top: scrollableHeight * 0.85,
-				behavior: 'smooth'
+		scrollDown.forEach(element => {
+			element.addEventListener('click', () => {
+				const opacity = parseFloat(getComputedStyle(element).opacity);
+				if (opacity < 1) return;
+
+				const container = document.querySelector('.hero-scroll-container') as HTMLElement;
+				const scrollableHeight = container.scrollHeight - window.innerHeight;
+				window.scrollTo({
+					top: scrollableHeight * 0.85,
+					behavior: 'smooth'
+				});
 			});
-		});
+		})
+
 
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
@@ -310,7 +314,7 @@
 								</span>
 							</p>
 							<p
-								style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em;"
+								style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em; text-align:center;"
 							>
 								Full-time, in-person &middot; June 2026 - August 2027, $50k/year
 								&middot; $10k travel + $5k equipment budget
@@ -323,34 +327,38 @@
 								class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
 							>
 						</div>
-						<p id="scroll-down">Scroll down to read <span id="scroll-down-arrow">↓</span></p>
+						<p class="scroll-down" id="scroll-down">Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span></p>
 					</div>
-					<figure class="hero-video-figure">
-						<p class="hero-video-annotation">
-							made by <a
-								href="https://www.instagram.com/paoloaverycarino/"
-								target="_blank"
-								rel="noopener noreferrer"
-								style="text-decoration: underline; color: inherit;">Paolo</a
+					<div>
+						<figure class="hero-video-figure">
+							<p class="hero-video-annotation">
+								made by <a
+									href="https://www.instagram.com/paoloaverycarino/"
+									target="_blank"
+									rel="noopener noreferrer"
+									style="text-decoration: underline; color: inherit;">Paolo</a
 							>, our media gap year last year ↓
-						</p>
-						<iframe
-							class="hero-video"
-							src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
-							title="Hack Club Media"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-						<figcaption class="hero-video-caption">
-							<a
-								href="https://shiba.hackclub.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								style="text-decoration: underline;">Hack Club Shiba</a
-							> - Nov, 2025 in Tokyo, Japan
-						</figcaption>
-					</figure>
+							</p>
+							<iframe
+									class="hero-video"
+									src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
+									title="Hack Club Media"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+							></iframe>
+							<figcaption class="hero-video-caption">
+								<a
+										href="https://shiba.hackclub.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										style="text-decoration: underline;">Hack Club Shiba</a
+								> - Nov, 2025 in Tokyo, Japan
+							</figcaption>
+						</figure>
+						<p class="scroll-down" id="scroll-down-2">Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span></p>
+					</div>
+
 				</div>
 			</div>
 		</div>
