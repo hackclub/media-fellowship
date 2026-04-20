@@ -110,7 +110,7 @@
 	onMount(() => {
 		const scrollDown = document.querySelectorAll('.scroll-down');
 
-		scrollDown.forEach(element => {
+		scrollDown.forEach((element) => {
 			element.addEventListener('click', () => {
 				const opacity = parseFloat(getComputedStyle(element).opacity);
 				if (opacity < 1) return;
@@ -122,8 +122,7 @@
 					behavior: 'smooth'
 				});
 			});
-		})
-
+		});
 
 		if (!topStripA || !topStripB || !bottomStripA || !bottomStripB) {
 			return;
@@ -316,8 +315,8 @@
 							<p
 								style="font-size: clamp(12px, 1.8vh, 22px); color: #aaa; letter-spacing: 0.05em; margin-top: 0.5em; text-align:center;"
 							>
-								Full-time, in-person &middot; June 2026 - August 2027, $50k/year
-								&middot; $10k travel + $5k equipment budget
+								Full-time, in-person &middot; June 2026 - August 2027, $50k/year &middot; $10k
+								travel + $5k equipment budget
 							</p>
 						</div>
 						<div class="button">
@@ -327,7 +326,9 @@
 								class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
 							>
 						</div>
-						<p class="scroll-down" id="scroll-down">Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span></p>
+						<p class="scroll-down" id="scroll-down">
+							Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span>
+						</p>
 					</div>
 					<div>
 						<figure class="hero-video-figure">
@@ -337,28 +338,29 @@
 									target="_blank"
 									rel="noopener noreferrer"
 									style="text-decoration: underline; color: inherit;">Paolo</a
-							>, our media gap year last year ↓
+								>, our media gap year last year ↓
 							</p>
 							<iframe
-									class="hero-video"
-									src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
-									title="Hack Club Media"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen
+								class="hero-video"
+								src="https://www.youtube-nocookie.com/embed/kkbf092Los0?autoplay=1&mute=1&controls=0&loop=1&playlist=kkbf092Los0&modestbranding=0"
+								title="Hack Club Media"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
 							></iframe>
 							<figcaption class="hero-video-caption">
 								<a
-										href="https://shiba.hackclub.com"
-										target="_blank"
-										rel="noopener noreferrer"
-										style="text-decoration: underline;">Hack Club Shiba</a
+									href="https://shiba.hackclub.com"
+									target="_blank"
+									rel="noopener noreferrer"
+									style="text-decoration: underline;">Hack Club Shiba</a
 								> - Nov, 2025 in Tokyo, Japan
 							</figcaption>
 						</figure>
-						<p class="scroll-down" id="scroll-down-2">Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span></p>
+						<p class="scroll-down" id="scroll-down-2">
+							Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span>
+						</p>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -412,9 +414,8 @@
 <section class="fellowship-section">
 	<h2 class="title">Introducing the Hack Club Media Gap Year Fellowship</h2>
 	<p class="fellowship-body">
-		This is a paid, full-time, in-person role from June 2026 - August 2027. $50k/year
-		+ $5k equipment stipend + $10k travel + healthcare & benefits at Hack Club HQ in Burlington,
-		Vermont.
+		This is a paid, full-time, in-person role from June 2026 - August 2027. $50k/year + $5k
+		equipment stipend + $10k travel + healthcare & benefits at Hack Club HQ in Burlington, Vermont.
 	</p>
 	<p class="fellowship-body">
 		It's intended to be something you do for a year before you go to college or whatever your plans

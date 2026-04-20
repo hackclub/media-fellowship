@@ -24,7 +24,7 @@
 	animation: scroll-down-arrow 2s infinite;
 }
 
-#scroll-down-2{
+#scroll-down-2 {
 	display: none;
 }
 
@@ -774,20 +774,20 @@ u:hover {
 		display: none;
 	}
 
-	#scroll-down{
+	#scroll-down {
 		display: none;
 	}
 
-	#scroll-down-2{
+	#scroll-down-2 {
 		display: flex;
 	}
 
-	.carousel-viewport{
+	.carousel-viewport {
 		--carousel-gap: 8px;
 		--card-height: clamp(80px, 11dvh, 130px);
 	}
 
-	.hero-flag{
+	.hero-flag {
 		margin-bottom: 0;
 	}
 
