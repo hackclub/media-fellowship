@@ -752,7 +752,8 @@ u:hover {
 	color: #ddd;
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+}
 .hero-video {
 	width: clamp(350px, 30vw, 500px);
 }
