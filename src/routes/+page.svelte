@@ -13,9 +13,9 @@
 
 	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
 	const daysUntilDue: number = Math.max(Math.ceil((dueDate.getTime() - Date.now()) / 86400000), 0);
-	let daySRemaining: string = "s";
-	if(daysUntilDue === 1){
-		daySRemaining = "";
+	let daySRemaining: string = 's';
+	if (daysUntilDue === 1) {
+		daySRemaining = '';
 	}
 
 	const topStripImages = [...topCarouselImages, ...topCarouselImages];
