@@ -12,7 +12,11 @@
 	const DUE_DAY: number = 30;
 
 	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
-	const daysUntilDue: number = Math.ceil((dueDate.getTime() - Date.now()) / 86400000);
+	const daysUntilDue: number = Math.max(Math.ceil((dueDate.getTime() - Date.now()) / 86400000), 0);
+	let daySRemaining: string = 's';
+	if (daysUntilDue === 1) {
+		daySRemaining = '';
+	}
 
 	const topStripImages = [...topCarouselImages, ...topCarouselImages];
 	const bottomStripImages = [...bottomCarouselImages, ...bottomCarouselImages];
@@ -323,7 +327,7 @@
 							<a
 								style="margin-top: 2vh;"
 								href="https://forms.hackclub.com/mediafellowship"
-								class="apply-button">Apply Now ({daysUntilDue} days remaining)</a
+								class="apply-button">Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
 							>
 						</div>
 						<p class="scroll-down" id="scroll-down">
@@ -427,7 +431,7 @@
 	</p>
 	<div class="button">
 		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
-			>Apply Now ({daysUntilDue} days remaining)</a
+			>Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
 		>
 	</div>
 </section>
@@ -824,7 +828,7 @@
 	<div class="vbutton-container">
 		<div class="button">
 			<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
-				>Apply Now ({daysUntilDue} days remaining)</a
+				>Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
 			>
 		</div>
 		<div class="button">
