@@ -8,8 +8,8 @@
 	const novella = resolve('/novella');
 
 	const DUE_YEAR: number = 2026;
-	const DUE_MONTH: number = 4;
-	const DUE_DAY: number = 30;
+	const DUE_MONTH: number = 5;
+	const DUE_DAY: number = 18;
 
 	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
 	const daysUntilDue: number = Math.max(Math.ceil((dueDate.getTime() - Date.now()) / 86400000), 0);
