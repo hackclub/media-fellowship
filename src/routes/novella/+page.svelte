@@ -37,9 +37,9 @@
 				a stupid idea.
 			</p>
 		</div>
-		<h3>Max's Note</h3>
+		<h3>Stelle's Note</h3>
 		<p>
-			Hi there! My name is Max, and I'm a 15-year-old intern at Hack Club as well as the lead
+			Hi there! My name is Stelle, and I'm a 15-year-old intern at Hack Club as well as the lead
 			designer for this website! I wasn't tasked to write this by HQ, but over the course of making
 			this site, I felt like I wanted to write something for you to read. If you're reading this
 			note, it likely means you're thinking of applying to become a media gap year for Hack Club!
@@ -96,7 +96,7 @@
 			anyways. We don't expect you to be the most skilled or the most seasoned in your field. We are
 			looking for people are will be dedicated to their work and to our cause.
 		</p>
-		<p style="color: var(--color-text-dim);">- Max Tran, 2026 Summer Intern</p>
+		<p style="color: var(--color-text-dim);">- Stelle Tran, 2026 Summer Intern</p>
 		<br />
 		<h3>Swarit's Note</h3>
 		<p>
