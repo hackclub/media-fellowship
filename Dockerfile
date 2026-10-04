@@ -1,21 +1,23 @@
-FROM node:20-alpine AS builder
+FROM oven/bun:1 AS builder
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm ci
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
 
 COPY . .
-RUN GCP_BUILDPACKS=1 npm run build
+RUN bun run --bun build
 
-FROM node:20-alpine
+FROM oven/bun:1-slim
 
 WORKDIR /app
 
+COPY --from=builder /app/package.json ./
 COPY --from=builder /app/build ./build
 
+ENV NODE_ENV=production
 ENV HOST=0.0.0.0
 ENV PORT=3000
 EXPOSE 3000
 
-CMD ["node", "build/index.js"]
+CMD ["bun", "build/index.js"]
