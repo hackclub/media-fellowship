@@ -7,17 +7,6 @@
 
 	const novella = resolve('/novella');
 
-	const DUE_YEAR: number = 2026;
-	const DUE_MONTH: number = 5;
-	const DUE_DAY: number = 18;
-
-	const dueDate: Date = new Date(DUE_YEAR, DUE_MONTH - 1, DUE_DAY);
-	const daysUntilDue: number = Math.max(Math.ceil((dueDate.getTime() - Date.now()) / 86400000), 0);
-	let daySRemaining: string = 's';
-	if (daysUntilDue === 1) {
-		daySRemaining = '';
-	}
-
 	const topStripImages = [...topCarouselImages, ...topCarouselImages];
 	const bottomStripImages = [...bottomCarouselImages, ...bottomCarouselImages];
 
@@ -293,7 +282,7 @@
 							/>
 							<h1 id="title">tell our stories.</h1>
 							<p id="body">
-								Hack Club is hiring 2 teenage filmmakers to travel the world making films about the
+								The Hack Club Media Gap Year Fellowship brings teenage filmmakers around the world to tell the stories of the
 								next generation of
 								<span class="hero-body-crossfade-wrapper">
 									<span class="hero-body-crossfade hero-body-crossfade-sizer" aria-hidden="true">
@@ -324,11 +313,7 @@
 							</p>
 						</div>
 						<div class="button">
-							<a
-								style="margin-top: 2vh;"
-								href="https://forms.hackclub.com/mediafellowship"
-								class="apply-button">Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
-							>
+							<p class="applications-closed">Applications are closed</p>
 						</div>
 						<p class="scroll-down" id="scroll-down">
 							Scroll down to read <span class="scroll-down-arrow" id="scroll-down-arrow">↓</span>
@@ -392,7 +377,6 @@
 					{#if token.type === 'break'}
 						<br class="typing-word" />
 					{:else if token.type === 'link'}
-						<!-- eslint-disable svelte/no-navigation-without-resolve -->
 						<a
 							class="typing-word"
 							href={token.href}
@@ -401,7 +385,6 @@
 							style="text-decoration: underline; color: inherit; pointer-events: auto;"
 							>{token.text}</a
 						>{WORD_SEPARATOR}
-						<!-- eslint-enable svelte/no-navigation-without-resolve -->
 					{:else if token.type === 'underline'}
 						<span class="typing-word typing-underline">{token.text}</span>{WORD_SEPARATOR}
 					{:else if token.accent}
@@ -430,9 +413,7 @@
 		> Make Hack Club a household name. Reach new audiences and as many teens as you can.
 	</p>
 	<div class="button">
-		<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
-			>Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
-		>
+		<p class="applications-closed">Applications are closed</p>
 	</div>
 </section>
 
@@ -824,12 +805,10 @@
 </section>
 
 <section class="cta-section">
-	<h1 class="title">The door is open.</h1>
+	<h1 class="title">Thank you for your interest.</h1>
 	<div class="vbutton-container">
 		<div class="button">
-			<a href="https://forms.hackclub.com/mediafellowship" class="apply-button"
-				>Apply Now ({daysUntilDue} day{daySRemaining} remaining)</a
-			>
+			<p class="applications-closed">Applications are closed</p>
 		</div>
 		<div class="button">
 			<a id="linkButton" href={novella}>A note from the designers ↗</a>

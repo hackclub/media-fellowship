@@ -196,7 +196,8 @@
 	color: #ec3750;
 }
 
-.apply-button {
+.applications-closed {
+	border-style: solid;
 	font-size: clamp(10px, 5vw, 25px);
 	background-color: var(--color-bg);
 	border-radius: 999999px;
@@ -208,14 +209,8 @@
 	border-color: #ffffff;
 }
 
-.hero .apply-button {
+.hero .applications-closed {
 	font-size: clamp(10px, 2vh, 25px);
-}
-
-.apply-button:hover {
-	color: var(--color-bg);
-	background-color: #ffffff;
-	border-color: #ffffff;
 }
 
 .hero {
@@ -449,7 +444,7 @@ u:hover {
 	font-size: clamp(30px, 7vh, 75px);
 }
 
-.cta-section .apply-button {
+.cta-section .applications-closed {
 	margin-top: 3vh;
 }
 

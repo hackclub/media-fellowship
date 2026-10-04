@@ -1,0 +1,13 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["typescript", "oxc"],
+	"env": {
+		"browser": true,
+		"node": true,
+		"svelte": true
+	},
+	"categories": {
+		"correctness": "error"
+	},
+	"ignorePatterns": ["static/**", ".svelte-kit/**", "build/**", "test-results/**"]
+}

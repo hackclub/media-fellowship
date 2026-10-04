@@ -1,6 +1,6 @@
 # Hack Club Media Gap Year Fellowship
 
-We're hiring two teens this year to be the face of Hack Club's social media, and this is the website for the application!
+This is the website for Hack Club's Media Gap Year Fellowship. Applications are closed.
 
 This is a website (frontend only) built in Svelte.
 <br>
@@ -18,3 +18,7 @@ To run in Docker:
 docker build -t media-fellowship .
 docker run --rm -p 3000:3000 media-fellowship
 ```
+
+TypeScript 7 is installed as `@typescript/native`. The `typescript` dependency aliases Microsoft's TypeScript 6 compatibility package because SvelteKit and `svelte-check` still require its compiler API. Keep both aliases when updating dependencies.
+
+Linting uses Oxlint, and formatting uses Oxfmt (`bun run format`). Oxlint checks Svelte script blocks; Svelte diagnostics are checked with `bun run --bun check`.

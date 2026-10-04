@@ -1,0 +1,11 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"printWidth": 100,
+	"sortTailwindcss": {
+		"stylesheet": "./src/routes/layout.css"
+	},
+	"ignorePatterns": ["bun.lock", "static/**", ".svelte-kit/**", "build/**", "test-results/**"]
+}

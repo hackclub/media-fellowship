@@ -21,6 +21,7 @@
 		<div>
 			<h1>The Hacker Novella</h1>
 			<h2>A note from the designers</h2>
+			<p>Applications are closed. This note was written during the application period.</p>
 		</div>
 		<div style="color: var(--color-text-dim);">
 			<p style="text-indent: 50px;">
